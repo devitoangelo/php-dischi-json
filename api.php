@@ -50,7 +50,6 @@ $json_string = json_encode($discs);
 
 header('Content-type: application/json');
 
-
 echo $json_string;
 
 ?>
