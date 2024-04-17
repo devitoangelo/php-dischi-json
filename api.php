@@ -52,4 +52,6 @@ header('Content-type: application/json');
 
 echo $json_string;
 
+file_put_contents('dischi.json', $json_string);
+
 ?>

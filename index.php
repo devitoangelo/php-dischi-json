@@ -26,13 +26,29 @@
 
     <header class="d-flex">
 
-    <div class="img">
-    <img width="200px" src="./assets/img/spotify.png" alt="">
-    </div>
-      
-
-
+      <div class="img">
+        <img width="200px" src="./assets/img/spotify.png" alt="">
+      </div>
     </header>
+
+    <main>
+
+
+      <div class="container pt-5">
+        <div class="col-2 d-flex w-100">
+          <div class="card" v-for="disc in discs">
+            <img class="card-img-top" src="holder.js/100x180/" alt="Title" />
+            <div class="card-body ">
+              <h4 class="card-title">{{disc.title}}</h4>
+              <p class="card-text">Text</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </main>
 
 
 
