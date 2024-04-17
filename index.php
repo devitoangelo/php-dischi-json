@@ -34,21 +34,32 @@
     <main>
 
 
-      <div class="container pt-5">
-        <div class="col-2 d-flex w-100">
-          <div class="card" v-for="disc in discs">
-            <img class="card-img-top" src="holder.js/100x180/" alt="Title" />
-            <div class="card-body ">
-              <h4 class="card-title">{{disc.title}}</h4>
-              <p class="card-text">Text</p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col col_">
+            <div class="card card_" v-for='disc in discs'>
+              <img :src="disc.poster" width="300px" alt="">
+              <div class="card-title">
+                <h4>{{disc.title}}</h4>
+
+                <div class="card-body">
+                  <p> Author : {{disc.author}}</p>
+                  <p> Year : {{disc.year}}</p>
+                  <p> Genere : {{disc.genre}}</p>
+
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
+  </div>
 
 
-    </main>
+
+
+  </main>
 
 
 

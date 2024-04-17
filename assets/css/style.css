@@ -1,8 +1,33 @@
-header{
-    background-color:  #06131F;;
+:root{
+--header_bg : #06131F;
+--main_bg :#1D2D3C;
+
 }
 
-.img{
+header {
+background-color: var(--header_bg);
+    
+}
+
+main{
+background-color: var(--main_bg);
+}
+
+.img {
     width: 80%;
     margin: auto;
+}
+
+.col_ {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card_ {
+
+    border-radius: 1rem;
+    margin-top: 1rem;
+
 }
